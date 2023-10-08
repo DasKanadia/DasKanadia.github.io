@@ -1,0 +1,57 @@
+body{background-color: rgba(47,59,64,0.35); 
+    padding-left: 3em; padding-top: 1em;
+    font-family: "Open Sans"; 
+    font-weight: 800,600,400,300;
+    width: 910px;
+}
+h1{ font-style: oblique; text-align: center;}
+ul{ list-style-type: none;}
+
+#mainBlock {box-shadow: grey;}
+
+ul.tierList, h2{
+  margin:0; padding:0;
+}
+li:nth-child(2n) {background-color: rgba(47,59,64,0.35);}
+
+span{text-align: center; font-family: "Open Sans";
+      list-style-type: none;
+}
+
+span.first {
+    display: inline-block;
+    width: 300px;
+    background-color: #FFFFFF;
+}
+
+#budgetPrice {background-color: #5BB189; 
+  height:48px; font-size: 24px;
+}
+#stdPrice{background-color: #4B0082; 
+  height:48px; font-size: 24px;}
+#scholarPrice{background-color: #EC632A; 
+  height:48px; font-size: 24px;}
+/**/
+  span.second {
+    display: inline-block;
+    width: 300px;
+    color:#FFFFFF; 
+    background-color: #2F4F4F;
+  }
+
+  span.third {
+    display: inline-block;
+    width: 300px;
+
+    background-color: #FFFFFF;
+  }
+
+
+footer{color:#f9f9f9; background-color: #2f4f4f; 
+    width: 910px;
+}
+
+#footerText {
+  margin: 16px;
+  padding: 16px;
+}
