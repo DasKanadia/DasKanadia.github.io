@@ -1,6 +1,6 @@
-<!-- COMP 3612 - Assignment I 
+<!--COMP 3612 - Assignment I 
     Zachariah Ly, zly859@mtroyal.ca
-
+    index.html 
 -->
 
 <!DOCTYPE html>
@@ -16,18 +16,20 @@
 
     <body>
         <article>
-            <h1>Assignment #1 Student Plans</h1>
+            <h1><b>Assignment #1 Student Plans</b></h1>
 
             <div id="mainBlock">
                 <span class="first">
                     <ul id="budget", class="tierList">
                         <li><b>Budget Student</b></li>
-                        <li id="budgetPrice"><b>$10</b><sub>/mo</sub></li>
+                        <li id="budgetPrice", class="prices"><b>$10</b><sub>/mo</sub></li>
                         <li><b>512MB</b> Student Memory</li>
                         <li><b>1TB</b> Patience</li>
                         <li><b>20GB</b> Exam Recall</li>
                         <li><b>0</b> Quiz A Grades</li>
-                        <li>View Forum</li>
+                        <li class="formButton">
+                            <button class="formText">View form</button>
+                        </li>
                     </ul>          
                 </span>
 
@@ -39,19 +41,23 @@
                         <li><b>2TB</b> Patience</li>
                         <li><b>40GB</b> Exam Recall</li>
                         <li><b>2</b> Quiz A Grades</li>
-                        <li>View Forum</li>
+                        <li class="formButton">
+                            <button class="formText">View form</button>
+                        </li>
                     </ul>
                 </span>
 
                 <span class="third">
                     <ul id="scholarship", class="tierList">
                         <li><b>Scholarship Student</b></li>
-                        <li id="scholarPrice"><b>$50</b><sub>/mo</sub></li>
+                        <li id="scholarPrice", class="prices"><b>$50</b><sub>/mo</sub></li>
                         <li><b>16GB</b> Student Memory</li>
                         <li><b>6TB</b> Patience</li>
                         <li><b>80GB</b> Exam Recall</li>
                         <li><b>3</b> Quiz A Grades</li>
-                        <li>View Forum</li>
+                        <li class="formButton">
+                            <button class="formText">View form</button>
+                        </li>
                     </ul>
                 </span>
             </div>
@@ -63,7 +69,7 @@
     <footer>
         <div id="footerText">
             <h2>Learn in confidence</h2>
-            <sub>All our marking plans come with the same set of award-winning features:</sub>
+            <p>All our marking plans come with the same set of award-winning features:</p>
             <ul>
                 <li>Professor anti-grumpiness filter</li>
                 <li>Promise not to use ChatGPT</li>
