@@ -1,42 +1,35 @@
+/* Color Pallet:
+      Off-black   - #1c1c1c 
+      Text White  - #ececec
+      Creme BkGr. - #fcf8f3*/
+
 /*Global CSS Properties*/
-body{ background-color: #D3D3D3; 
-      padding-left: 3em; padding-top: 1em; width: 910px;
-      font-family: "Open Sans"; font-weight: 800,600,400,300; }
-h1  { font-size: xx-large; letter-spacing: 3px;
-      text-align: center; padding-top: 16px;}
-ul  { list-style-type: none;}
-li  { height:36px; padding-top: 12px;}
+body { margin: 0px; padding: 0px; font-family: "Open Sans";}
 
-article { box-shadow: 2px 2px 12px 2px #625D52;}
-span    { text-align: center; font-family: "Open Sans"; list-style-type: none;}
+/* Header Properties */
+header { font-size: medium; letter-spacing: 4px; display: flex; padding-top: 0px; justify-content: space-between;
+         background-color: #1c1c1c; color: #ececec; height: max-content; text-align: center; }
+#name h1.headerElement  { font-family: "Cedarville Cursive"; width: max-content; text-align: left; padding-left: 16px;}
 
-span { display: inline-block; width: 300px;}
-span.first, span.third { background-color: #FFFFFF; }
-span.second { color:#FFFFFF; background-color: #2F4F4F; }
+div.headerElement       { margin-bottom: 8px; display:inline-block;}
 
 
-/* List Properties + Form Button */
-ul.tierList{ margin: 0; padding: 0;}
-ul.tierList li:nth-child(2n) { background-color: rgba(47,59,64,0.35);}
-ul.tierList li:first-child {font-size: x-large; margin-bottom: 5px;}
-ul.tierList li.formButton:last-child { height: 80px; padding-top: 24px;}
-button.formText { color: #FFFFFF; background-color: #3A6BA5; background-size: 128px; 
-                  width: 256px; height: 48px ; border: 0px; border-radius: 6px;
-                  padding-left: 96px; padding-right: 96px; }
-  /* Border Rounding: https://www.w3schools.com/css/css3_borders.asp*/
+#headerButtons  { margin: 16px; padding: 1px; font-size: medium; border: 10px #4B0082;
+                  font-family: "Open Sans"; float: right; text-align: right; display: flex;
+                  justify-content: center; align-items: center;
+}
 
-/*Price Block Properties*/
-#budgetPrice  { background-color: #5BB189;}
-#stdPrice     { background-color: #4B0082;}
-#scholarPrice { background-color: #EC632A;}
-li.prices     { height:48px; font-size: 24px; padding-top: 12px;}
+button.headerElement { color: #ececec; background-color: #1c1c1c; width: 128px; height: max-content;
+      text-align: center ;  border: 0px; border-radius: 6px; margin: 8px; 
 
-/* Footer Properties */
-footer { color:#f9f9f9; background-color: #2f4f4f; 
-         width: 910px; letter-spacing: 2px;}
+      border: 0px; border-radius: 6px;
+      padding: 16px;
+}
+button.headerElement:hover{ background-color: #323131}
 
-#footerText { margin: 16px; padding: 16px;}
 
-/*
 
-*/
+#mainBody { background-image: url(./images/Kananaskis_Lakes_Lookout.jpg); max-width: 100%;
+            display: flex; padding: 3em; min-height: 800px; background-size:cover;
+            /* margin: 16px; box-shadow: 2px 2px 12px 2px #625D52; */
+}
