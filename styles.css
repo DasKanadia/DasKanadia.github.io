@@ -15,21 +15,24 @@ div.headerElement       { margin-bottom: 8px; display:inline-block;}
 
 
 #headerButtons  { margin: 16px; padding: 1px; font-size: medium; border: 10px #4B0082;
-                  font-family: "Open Sans"; float: right; text-align: right; display: flex;
+                  float: right; text-align: right; display: flex;
                   justify-content: center; align-items: center;
 }
 
 button.headerElement { color: #ececec; background-color: #1c1c1c; width: 128px; height: max-content;
       text-align: center ;  border: 0px; border-radius: 6px; margin: 8px; 
+      font-family: "Open Sans"; font-size: large;
 
       border: 0px; border-radius: 6px;
       padding: 16px;
 }
 button.headerElement:hover{ background-color: #323131}
 
+#bodyBox{ content: center; background-color: #323131; color: #ececec; opacity: 0.7;
+}
 
 
-#mainBody { background-image: url(./images/Kananaskis_Lakes_Lookout.jpg); max-width: 100%;
+#mainBody { background-image: url(./images/KananaskisLakesLookout.jpg); max-width: 100%;
             display: flex; padding: 3em; min-height: 800px; background-size:cover;
-            /* margin: 16px; box-shadow: 2px 2px 12px 2px #625D52; */
+            margin: 16px; box-shadow: 2px 2px 12px 2px #625D52;
 }
