@@ -13,6 +13,10 @@ addEventListener("DOMContentLoaded", async (event) =>{
         //    document.querySelector("#creditContents").classList.remove("creditPopup");
         //    setTimeout(() => {document.querySelector("#creditContents").classList.add("creditPopup");}, 3600);});}
     }
+
+    await makeListeners();
+
+    
 });
 
 /**
@@ -23,12 +27,11 @@ addEventListener("DOMContentLoaded", async (event) =>{
  */
    
 function pageSwitch(event){
-    console.log(event);
+    console.log(event.target.textContent);
 
     pages.forEach(function(page) {
-    
-    if(event.target.classList.contains("button")){
-    if (((page.dataset.id === event.target.id)&& (page.classList.contains("hide"))) ||(page.dataset.id != event.target.id)&& (!page.classList.contains("hide"))) {
-        page.classList.toggle("hide");}}
+        if(event.target.classList.contains("button")){
+        if (((page.dataset.id === event.target.id)&& (page.classList.contains("hide"))) ||(page.dataset.id != event.target.id)&& (!page.classList.contains("hide"))) {
+            page.classList.toggle("hide");}}
     });
 }
