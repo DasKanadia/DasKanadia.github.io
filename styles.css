@@ -4,14 +4,17 @@
       Creme BkGr. - #fcf8f3*/
 
 /*Global CSS Properties*/
-body { margin: 0px; padding: 0px; font-family: "Open Sans";}
+body { margin: 0px; font-family: "Open Sans";}
 
 /* Header Properties */
-header { font-size: medium; letter-spacing: 4px; display: flex; padding-top: 0px; justify-content: space-between;
-         background-color: #1c1c1c; color: #ececec; height: max-content; text-align: center; }
-#name h1.headerElement  { font-family: "Cedarville Cursive"; width: max-content; text-align: left; padding-left: 16px;}
+header { font-size: large;  display: flex; padding-top: 0px; justify-content: space-between;
+         background-color: #1c1c1c; color: #ececec ; text-align: center; }
 
-div.headerElement       { margin-bottom: 8px; display:inline-block;}
+#name h1.headerElement  { font-family: "Cedarville Cursive"; width: fit-content; text-align: left; 
+                          margin: 0px; padding: 8px; padding-left: 16px;}
+
+
+div.headerElement       { margin-bottom: 0px; display:inline-block;}
 
 
 #headerButtons  { margin: 16px; padding: 1px; font-size: medium; border: 10px #4B0082;
@@ -24,17 +27,32 @@ button.headerElement { color: #ececec; background-color: #1c1c1c; width: 128px; 
       font-family: "Open Sans"; font-size: large;
 
       border: 0px; border-radius: 6px;
-      padding: 16px;
+      padding: 8px;
 }
 button.headerElement:hover{ background-color: #323131}
 
 /* HTML Body */
 
-#bodyBox{ content: center; background-color: #323131; color: #ececec; opacity: 0.7;
+.bodyBox img {opacity: 1; max-height: 600px;}
+
+.bodyBox{ background-color: #323131; color: #ececec; position: relative; display: grid;
       padding: 16px;
 }
 
-#mainBody { background-image: url(https://github.com/DasKanadia/DasKanadia.github.io/blob/main/images/kananaskisLakesLookout.jpg?raw=true); 
-            max-width: 100%; display: flex; padding: 3em; min-height: 800px; background-size:cover;
-            margin: 16px; box-shadow: 2px 2px 12px 2px #625D52;
+.opacity {opacity: 0.7;}
+
+.bodyText h1 { max-height: fit-content; grid-column: 1 / -1; grid-row: 1;
 }
+
+#mainBody { background-image: url(https://github.com/DasKanadia/DasKanadia.github.io/blob/main/images/kananaskisLakesLookout.jpg?raw=true); 
+            background-color: #ececec; max-width: 100%; display: flex; padding: 3em; min-height: 800px; background-size:cover;
+            margin: 24px; box-shadow: 4px 4px 16px 4px #625D52; justify-content: center; border: none;
+}
+
+
+
+
+/* Footer Elements */
+footer { font-size: medium; letter-spacing: 3px; display: flex; 
+      background-color: #ececec; color: #1c1c1c; height: max-content; text-align: center; 
+      padding: 8px; justify-content: end; border: none}

@@ -1,5 +1,11 @@
-addEventListener("DOMContentLoaded", async (event) =>{
+addEventListener("DOMContentLoaded", (event) =>{
+    //const pages = Array.from(document.querySelector("main").children);
+
+    
     async function makeListeners(){
+        document.querySelector("#name").addEventListener("click", (event) =>{
+            onclick = "window.location.href='index.html';"
+        });
         document.querySelector("#headerButtons").addEventListener("click", (event) => pageSwitch(event)); 
 
         // document.querySelector("#clear").addEventListener("click", (event) =>clear(event));
@@ -14,10 +20,32 @@ addEventListener("DOMContentLoaded", async (event) =>{
         //    setTimeout(() => {document.querySelector("#creditContents").classList.add("creditPopup");}, 3600);});}
     }
 
-    await makeListeners();
+    makeListeners();
 
     
+
+
 });
+
+
+
+    // listGallery.addEventListener("click", (e) => {
+    //     if (e.target && e.target.nodeName == "LI"){
+    //     fetch(url_ex6.replace("7", e.target.value))
+    //         .then(response => response.json())
+    //         .then(data =>{ 
+    //             const listPaintings = document.querySelector('#paintings');
+    //             listPaintings.replaceChildren();
+    //             for (let d of data){
+    //                 let listItem = document.createElement("li");
+    //                 listItem.textContent = d.title;
+    //                 listPaintings.appendChild(listItem);
+    //             }  
+    //         })
+    //     }
+    // });
+
+
 
 /**
  * 
@@ -31,7 +59,7 @@ function pageSwitch(event){
 
     pages.forEach(function(page) {
         if(event.target.classList.contains("button")){
-        if (((page.dataset.id === event.target.id)&& (page.classList.contains("hide"))) ||(page.dataset.id != event.target.id)&& (!page.classList.contains("hide"))) {
+        if (((page.dataset.id === event.target.id) && (page.classList.contains("hide"))) ||(page.dataset.id != event.target.id)&& (!page.classList.contains("hide"))) {
             page.classList.toggle("hide");}}
     });
 }
