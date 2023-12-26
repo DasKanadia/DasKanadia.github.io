@@ -4,7 +4,7 @@
       Creme BkGr. - #fcf8f3*/
 
 /*Global CSS Properties*/
-body { margin: 0px; font-family: "Open Sans";}
+body { margin: 0px; font-family: "Open Sans"; background-color: #ececec;}
 
 /* Header Properties */
 header { font-size: large;  display: flex; padding-top: 0px; justify-content: space-between;
@@ -12,6 +12,8 @@ header { font-size: large;  display: flex; padding-top: 0px; justify-content: sp
 
 #name h1.headerElement  { font-family: "Cedarville Cursive"; width: fit-content; text-align: left; 
                           margin: 0px; padding: 8px; padding-left: 16px;}
+
+#name, button.headerElement { cursor: pointer;}
 
 
 div.headerElement       { margin-bottom: 0px; display:inline-block;}
@@ -23,29 +25,32 @@ div.headerElement       { margin-bottom: 0px; display:inline-block;}
 }
 
 button.headerElement { color: #ececec; background-color: #1c1c1c; width: 128px; height: max-content;
-      text-align: center ;  border: 0px; border-radius: 6px; margin: 8px; 
-      font-family: "Open Sans"; font-size: large;
+      text-align: center;  font-family: "Open Sans"; font-size: large;
 
       border: 0px; border-radius: 6px;
-      padding: 8px;
+      padding: 8px; margin: 8px;
 }
+
 button.headerElement:hover{ background-color: #323131}
 
+/* ----------------------------------------------------------------------------------------------------------- */
+
+
 /* HTML Body */
-
-.bodyBox img {opacity: 1; max-height: 600px;}
-
-.bodyBox{ background-color: #323131; color: #ececec; position: relative; display: grid;
-      padding: 16px;
+.bodyBox{ background: rgba(50, 49, 49, 0.7); color: #ececec; position: relative;
+      padding: 16px; height: 460px;
+      /* height: auto; */
 }
+.hide {background: none;}
 
-.opacity {opacity: 0.7;}
+/* .opacity {opacity: 0.7;} */
 
-.bodyText h1 { max-height: fit-content; grid-column: 1 / -1; grid-row: 1;
-}
+h1.bodyText { background: rgba(50, 49, 49, 0.7); max-height: min-content; max-width: fit-content;
+              padding: 8px; grid-column: 1 / -1; grid-row: 1; font-style: oblique;}
 
-#mainBody { background-image: url(https://github.com/DasKanadia/DasKanadia.github.io/blob/main/images/kananaskisLakesLookout.jpg?raw=true); 
-            background-color: #ececec; max-width: 100%; display: flex; padding: 3em; min-height: 800px; background-size:cover;
+#mainBody { background-image: url(./photography/croppedKananaskisLakesLookout.jpg); 
+      /* background-image: url(https://github.com/DasKanadia/DasKanadia.github.io/blob/main/images/kananaskisLakesLookout.jpg?raw=true);  */
+            background-color: #ececec; max-width: 100%; display: flex; padding: 3em; min-height: auto; background-size:cover;
             margin: 24px; box-shadow: 4px 4px 16px 4px #625D52; justify-content: center; border: none;
 }
 
@@ -56,3 +61,8 @@ button.headerElement:hover{ background-color: #323131}
 footer { font-size: medium; letter-spacing: 3px; display: flex; 
       background-color: #ececec; color: #1c1c1c; height: max-content; text-align: center; 
       padding: 8px; justify-content: end; border: none}
+
+
+/* Standalone Content*/
+#indexHeader { font-size: 400%;}
+#aboutMe     { box-shadow: 4px 4px 16px 4px #323131; max-height: 460px; border: 0px; border-radius: 8px;}
