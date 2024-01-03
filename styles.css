@@ -3,66 +3,61 @@
       Text White  - #ececec
       Creme BkGr. - #fcf8f3*/
 
-/*Global CSS Properties*/
+/* Global Properties */
 body { margin: 0px; font-family: "Open Sans"; background-color: #ececec;}
 
+
 /* Header Properties */
-header { font-size: large;  display: flex; padding-top: 0px; justify-content: space-between;
-         background-color: #1c1c1c; color: #ececec ; text-align: center; }
+header { display: flex; justify-content: space-between; background-color: #1c1c1c; /*font-size: large;*/ }
+#headerButtons  { padding: 4px; padding-right: 16px; display: flex; align-items: center; }
 
-#name h1.headerElement  { font-family: "Cedarville Cursive"; width: fit-content; text-align: left; 
-                          margin: 0px; padding: 8px; padding-left: 16px;}
-
-#name, button.headerElement { cursor: pointer;}
+#name.headerElement  { font-family: "Cedarville Cursive"; margin: 0px; padding: 12px; padding-top: 0px;}
+#name, button.headerElement { cursor: pointer; font-style: italic; color: #ececec;}
 
 
-div.headerElement       { margin-bottom: 0px; display:inline-block;}
-
-
-#headerButtons  { margin: 16px; padding: 1px; font-size: medium; border: 10px #4B0082;
-                  float: right; text-align: right; display: flex;
-                  justify-content: center; align-items: center;
-}
-
-button.headerElement { color: #ececec; background-color: #1c1c1c; width: 128px; height: max-content;
+button.headerElement { background-color: #1c1c1c; min-width: 128px; height: max-content;
       text-align: center;  font-family: "Open Sans"; font-size: large;
-
       border: 0px; border-radius: 6px;
-      padding: 8px; margin: 8px;
-}
-
+      padding: 8px; margin: 8px;}
 button.headerElement:hover{ background-color: #323131}
+
+
+/* Footer Elements */
+footer { letter-spacing: 3px; display: flex; color: #1c1c1c; height: max-content; text-align: center; 
+      padding: 8px; justify-content: space-between/*end*/; font-style: italic;}
 
 /* ----------------------------------------------------------------------------------------------------------- */
 
 
+
 /* HTML Body */
-.bodyBox{ background: rgba(50, 49, 49, 0.7); color: #ececec; position: relative;
-      padding: 16px; height: 460px;
+.section {  background-color: #ececec;  display: flex; padding: 3em; min-height: auto; background-size:cover;
+            margin: 24px; box-shadow: 4px 4px 16px 4px #625D52; justify-content: center; border: none;}
+
+#aboutIllustration { object-fit: scale-down; display: flex; width: 1500px; justify-content: center;}
+
+.bodyBox{ color: #ececec; position: relative;
+      padding: 16px; height: 560px; 
       /* height: auto; */
 }
-.hide {background: none;}
+.bodyBox.hideBackground {background: none;}
 
+
+/* Eventually remove background from h1.bodyText*/
+/* h1.bodyText { background: rgba(50, 49, 49, 0.7); max-height: min-content; max-width: fit-content; border: 0px; border-radius: 8px;
+              padding: 8px; grid-column: 1 / -1; grid-row: 1;} */
+.bodyBox h1 { background: rgba(50, 49, 49, 0.7); max-height: min-content; max-width: fit-content; border: 0px; border-radius: 8px;
+      padding: 8px; grid-column: 1 / -1; grid-row: 1; justify-content: center;} 
+
+
+/* Standalone Content*//*font-family: "Cedarville Cursive";*/ 
+.largeHeader{ font-size: 300%; }
+.bodyBox h1 { background: rgba(50, 49, 49, 0.7); max-height: min-content; border: 0px; border-radius: 8px;
+              padding: 16px; grid-column: 1 / -1; grid-row: 1;} 
+#landingPage{ background-image: url(./images/tenPeaksToweringEiffel.jpg); }
+#aboutMe    { box-shadow: 4px 4px 16px 4px #323131; max-width: 460px; border: 0px; border-radius: 8px;}
+#aboutIllustration {justify-content: center;}
+
+.textBackdrop {background: rgba(50, 49, 49, 0.7); border: 0px; border-radius: 8px; padding: 8px;}
+.hide {display: none; background: none;}
 /* .opacity {opacity: 0.7;} */
-
-h1.bodyText { background: rgba(50, 49, 49, 0.7); max-height: min-content; max-width: fit-content;
-              padding: 8px; grid-column: 1 / -1; grid-row: 1; font-style: oblique;}
-
-#mainBody { background-image: url(./photography/croppedKananaskisLakesLookout.jpg); 
-      /* background-image: url(https://github.com/DasKanadia/DasKanadia.github.io/blob/main/images/kananaskisLakesLookout.jpg?raw=true);  */
-            background-color: #ececec; max-width: 100%; display: flex; padding: 3em; min-height: auto; background-size:cover;
-            margin: 24px; box-shadow: 4px 4px 16px 4px #625D52; justify-content: center; border: none;
-}
-
-
-
-
-/* Footer Elements */
-footer { font-size: medium; letter-spacing: 3px; display: flex; 
-      background-color: #ececec; color: #1c1c1c; height: max-content; text-align: center; 
-      padding: 8px; justify-content: end; border: none}
-
-
-/* Standalone Content*/
-#indexHeader { font-size: 400%;}
-#aboutMe     { box-shadow: 4px 4px 16px 4px #323131; max-height: 460px; border: 0px; border-radius: 8px;}
