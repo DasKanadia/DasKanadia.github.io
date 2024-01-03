@@ -37,8 +37,7 @@ footer { letter-spacing: 3px; display: flex; color: #1c1c1c; height: max-content
 #aboutIllustration { object-fit: scale-down; display: flex; width: 1500px; justify-content: center;}
 
 .bodyBox{ color: #ececec; position: relative;
-      padding: 16px; height: 560px; 
-      /* height: auto; */
+      padding: 16px; height: auto;
 }
 .bodyBox.hideBackground {background: none;}
 
@@ -46,15 +45,15 @@ footer { letter-spacing: 3px; display: flex; color: #1c1c1c; height: max-content
 /* Eventually remove background from h1.bodyText*/
 /* h1.bodyText { background: rgba(50, 49, 49, 0.7); max-height: min-content; max-width: fit-content; border: 0px; border-radius: 8px;
               padding: 8px; grid-column: 1 / -1; grid-row: 1;} */
-.bodyBox h1 { background: rgba(50, 49, 49, 0.7); max-height: min-content; max-width: fit-content; border: 0px; border-radius: 8px;
+.bodyBox h1 { max-height: min-content; max-width: fit-content; border: 0px; border-radius: 8px;
       padding: 8px; grid-column: 1 / -1; grid-row: 1; justify-content: center;} 
-
 
 /* Standalone Content*//*font-family: "Cedarville Cursive";*/ 
 .largeHeader{ font-size: 300%; }
-.bodyBox h1 { background: rgba(50, 49, 49, 0.7); max-height: min-content; border: 0px; border-radius: 8px;
-              padding: 16px; grid-column: 1 / -1; grid-row: 1;} 
-#landingPage{ background-image: url(./images/tenPeaksToweringEiffel.jpg); }
+
+#landingPage{ background-image: url(./images/tenPeaksToweringEiffel.jpg); height: 600px;}
+#aboutBackground{ background-image: url(./images/staringSarrail.jpg); height: 1800px;}
+
 #aboutMe    { box-shadow: 4px 4px 16px 4px #323131; max-width: 460px; border: 0px; border-radius: 8px;}
 #aboutIllustration {justify-content: center;}
 
