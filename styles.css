@@ -31,15 +31,10 @@ footer { letter-spacing: 3px; display: flex; color: #1c1c1c; height: max-content
 
 
 /* HTML Body */
-.section {  background-color: #ececec;  display: flex; padding: 3em; min-height: auto; background-size:cover;
-            margin: 24px; box-shadow: 4px 4px 16px 4px #625D52; justify-content: center; border: none;}
-
-#aboutIllustration { object-fit: scale-down; display: flex; width: 1500px; justify-content: center;}
-
-.bodyBox{ color: #ececec; position: relative;
-      padding: 16px; height: auto;
-}
-.bodyBox.hideBackground {background: none;}
+.section {  display: flex; padding: 3em; min-height: auto; background-size:cover; border: none;
+            margin: 24px;  justify-content: center; align-items: flex-start; }
+.bodyBox { color: #ececec; position: relative; padding: 16px; height: auto; }
+.bodyBox.hideBackground { background: none; }
 
 
 /* Eventually remove background from h1.bodyText*/
@@ -48,15 +43,19 @@ footer { letter-spacing: 3px; display: flex; color: #1c1c1c; height: max-content
 .bodyBox h1 { max-height: min-content; max-width: fit-content; border: 0px; border-radius: 8px;
       padding: 8px; grid-column: 1 / -1; grid-row: 1; justify-content: center;} 
 
-/* Standalone Content*//*font-family: "Cedarville Cursive";*/ 
-.largeHeader{ font-size: 300%; }
+
+
 
 #landingPage{ background-image: url(./images/tenPeaksToweringEiffel.jpg); height: 600px;}
+#aboutNameHeader {display: flex; justify-content: center;}
 #aboutBackground{ background-image: url(./images/staringSarrail.jpg); height: 1800px;}
 
-#aboutMe    { box-shadow: 4px 4px 16px 4px #323131; max-width: 460px; border: 0px; border-radius: 8px;}
-#aboutIllustration {justify-content: center;}
+#aboutMe    { box-shadow: 4px 4px 16px 4px #323131; max-width: 360px; border: 0px; border-radius: 8px;}
+#aboutIllustration {justify-content: center; object-fit: scale-down; display: flex; width: 1500px; }
 
-.textBackdrop {background: rgba(50, 49, 49, 0.7); border: 0px; border-radius: 8px; padding: 8px;}
+/* Class Element Characteristics*/
+.largeHeader{ font-size: 300%; /*font-family: "Cedarville Cursive";*/ }
+.textBackdrop {display: flex ; background: rgba(50, 49, 49, 0.7); border: 0px; border-radius: 8px; padding: 8px;}
+.boxShadow {box-shadow: 4px 4px 16px 4px #625D52;}
 .hide {display: none; background: none;}
 /* .opacity {opacity: 0.7;} */

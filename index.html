@@ -18,22 +18,23 @@
     
     <body>
         <header id="webpageHeader">
-            <h1 id="name", class="headerElement" onclick="window.location.href = 'index.html';">Zachariah 'Kong' Ly</h1>
+            <h1 id="name", class="headerElement">Zachariah 'Kong' Ly</h1>
+            <!-- <h1 id="name", class="headerElement" onclick="window.location.href = 'index.html';">Zachariah 'Kong' Ly</h1> -->
             <nav id="headerButtons", class="headerElement">
-                <button class="headerElement button" onclick="window.location.href = 'about.html';"  > About </button>
-                <button class="headerElement button" onclick="window.location.href = 'comingSoon.html';"> Entries </button>
+                <button id = "aboutButton", class="headerElement button" onclick="window.location.href = 'about.html';"  > About </button>
+                <button class="headerElement button unfinishedButton"> Entries </button>
                 <a href="https://linktr.ee/mountainkong"><button class="headerElement button"> Links </button></a>
-                <button class="headerElement button" onclick="window.location.href = 'comingSoon.html';"> Contact </button>  
+                <button class="headerElement button unfinishedButton"> Contact </button>
             </nav>
         </header>
         <main>
-            <div id = "landingPage" class="section">
-                <div data-id = "index" class="bodyBox">
+            <div id = "landingPage" class="section boxShadow">
+                <div id = "index" class="bodyBox">
                     <h1 class="bodyText largeHeader textBackdrop">Moun·tain K·ong</h1>
                     <h2 class="bodyText textBackdrop">/'mount(ə)n kɔŋ/</h2>
                 </div>
 
-                <div data-id="unfinished" class="bodyBox hide">
+                <div id="unfinished" class="bodyBox textBackdrop hide">
                     <h1 class="bodyText"> Coming Soon</h1>
                 </div>
             </div>

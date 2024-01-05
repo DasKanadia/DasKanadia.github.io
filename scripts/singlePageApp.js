@@ -8,7 +8,10 @@ document.addEventListener("DOMContentLoaded", async (event) =>{
 
     
     async function makeListeners(){
-        document.querySelector("#headerButtons").addEventListener("click", (event) => pageSwitch(event)); 
+//        document.querySelector("#headerButtons").addEventListener("click", (event) => changeView(event));//pageSwitch(event));
+        document.querySelector("#index").addEventListener("click", (event) => changeView(event));
+        document.querySelector(".unfinishedButton").addEventListener("click", (event) => changeView(event));        
+           
 
         // document.querySelector("#name").addEventListener("click", (event) =>{
         //     onclick = "window.location.href='index.html';"
@@ -28,44 +31,57 @@ document.addEventListener("DOMContentLoaded", async (event) =>{
 
     makeListeners();
 
+    function changeView(event) {    
+        console.log("Index element:", document.getElementById("index"));
+        console.log("Unfinished elements:", document.getElementsByClassName("unfinished"));
     
-    function pageSwitch(event){
-        console.log(event.target);
+        console.log(event);
 
-        pages.forEach((page) => {
-            console.log("hit: " + event.target.classList)
-            if(event.target.classList.contains("button")){
-                if (((page.dataset.id === event.target.id) && (page.classList.contains("hide"))) ||(page.dataset.id != event.target.id)&& (!page.classList.contains("hide"))) {
-                    page.classList.toggle("hide");
-                    console.log(page.dataset.id);
-                }
-            }
-        });
+        document.getElementById("index").classList.add("hide");
+        document.getElementById("unfinished").classList.add("hide");
+        console.log("got here");
+
+        if (event.target){
+            event.target.classList.remove("hide");
+            console.log(event.target);
+        } else
+            console.log("Error finding event.target");
+
     }
 
-//     <body>
-// <section id="view1">
-//   <button id="view2Button">GO TO 2</button>
-// </section>
-// <section id="view2" class="hidden">
-//   <button id="view1Button">GO TO 1</button>
-// </section>
+    // function resetView() {
+    //     forEach(() => {
+    //     });
+    // }
+    // function pageSwitch(event){
+    //     console.log(event.target);
+
+    //     pages.forEach((page) => {
+    //         console.log("hit: " + event.target.classList)
+    //         if(event.target.classList.contains("button")){
+    //             if (((page.dataset.id === event.target.id) && (page.classList.contains("hide"))) ||(page.dataset.id != event.target.id)&& (!page.classList.contains("hide"))) {
+    //                 page.classList.toggle("hide");
+    //                 console.log(page.dataset.id);
+    //             }
+    //         }
+    //     });
+    // }
+
+
+
+// <body>
+//      <section id="view1">
+//          <button id="view2Button">GO TO 2</button>
+//      </section>
+//      <section id="view2" class="hidden">
+//          <button id="view1Button">GO TO 1</button>
+//      </section>
 // </body>
 // .hidden {
 //     display: none;
 //   }
-//   document.getElementById("view1Button").addEventListener("click", changeView);
-// document.getElementById("view2Button").addEventListener("click", changeView);
 
-// function changeView(event) {
-//   resetView();
-//   event.target.classList.remove("hidden");
-// }
 
-// function resetView() {
-//   document.getElementById("view1").classList.add("hidden");
-//   document.getElementById("view2").classList.add("hidden");
-// }
 
 // <body>
 // <div id="someCoolWrapperForYourStlyesAndHTMLStructure">
