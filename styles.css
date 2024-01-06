@@ -4,12 +4,12 @@
       Creme BkGr. - #fcf8f3*/
 
 /* Global Properties */
-body { margin: 0px; font-family: "Open Sans"; background-color: #ececec;}
+body { margin: 0px; font-family: "Open Sans"; background-color: #ececec; color: #1c1c1c;}
 
 
 /* Header Properties */
 header { position: sticky; top: 0; z-index: 10; display: flex; justify-content: space-between; background-color: #1c1c1c; /*font-size: large;*/ }
-#headerButtons  { padding: 4px; padding-right: 16px; display: flex; align-items: center; }
+#headerButtons  { padding: 4px; /*padding-right: 0px;*/ display: flex; align-items: center; }
 
 #name.headerElement  { font-family: "Cedarville Cursive"; margin: 0px; padding: 12px; padding-top: 0px;}
 #name, button.headerElement { cursor: pointer; font-style: italic; color: #ececec;}
@@ -24,7 +24,7 @@ button.headerElement:hover{ background-color: #323131}
 
 /* Footer Elements */
 footer { letter-spacing: 3px; display: flex; color: #1c1c1c; height: max-content; text-align: center; 
-      padding: 8px; justify-content: /*space-between*/end; font-style: italic;}
+         padding: 8px; justify-content: /*space-between*/end; font-style: italic; }
 
 /* ----------------------------------------------------------------------------------------------------------- */
 
@@ -46,16 +46,18 @@ footer { letter-spacing: 3px; display: flex; color: #1c1c1c; height: max-content
 #aboutDesc.bodyText { font-size: 150%; font-weight: 500; }
 p.bodyText { align-items: center; display: flex; justify-content: center; font-size: 125%; margin-top: 10px;}
 
-#landingPage{ background-image: url(./images/tenPeaksToweringEiffel.jpg); height: 500px;}
-#aboutNameHeader {display: flex; justify-content: center; font-family: "Cedarville Cursive"; }
-#aboutNameHeader h1 {margin: 0px;}
-#aboutBackground{ background-image: url(./images/staringSarrail.jpg); height: 1800px;}
+#index              { width: 612px;}
+#landingPage        { background-image: url(./images/tenPeaksToweringEiffel.jpg); height: 100%; min-height: 560px; justify-content: flex-start;}
+#aboutNameHeader    { display: flex; justify-content: center; font-family: "Cedarville Cursive"; flex-direction: column; align-items: center;}
+#aboutNameHeader h1 { margin: 0px;}
+#aboutBackground    { background-image: url(./images/staringSarrail.jpg); height: 1440px; display: flex;
+                      flex-direction: column; justify-content: flex-start; }
 
-#aboutMe    { box-shadow: 4px 4px 16px 4px #323131; max-width: 360px; border: 0px; border-radius: 8px;}
-#aboutIllustration {justify-content: center; object-fit: scale-down; display: flex; width: 1500px; }
+#aboutMe           { box-shadow: 4px 4px 16px 4px #323131; max-width: 360px; border: 0px; border-radius: 8px;}
+#aboutIllustration { justify-content: center; object-fit: scale-down; display: flex; width: 100%; margin-top: 0px; margin-bottom: 0px;}
 
 /* Class Element Characteristics*/
 .largeHeader{ font-size: 250%; /*font-family: "Cedarville Cursive";*/ }
-.textBackdrop {display: flex ; background: rgba(50, 49, 49, 0.8); border: 0px; border-radius: 8px; padding: 8px;}
+.textBackdrop {display: flex ; background: rgba(50, 49, 49, 0.8); border: 0px; border-radius: 8px; padding: 8px; margin-bottom: 32px;}
 .boxShadow {box-shadow: 4px 4px 16px 4px #625D52;}
 .hide {display: none; background: none;}
