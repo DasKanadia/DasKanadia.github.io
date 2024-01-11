@@ -1,14 +1,67 @@
-[{  "title": "Sunkissed Creek", "location": "Glacier National Park, Montana", "image": "./photography/deadwoodFallsCoffee.jpg",
-    "description": [
-        "During a hiking trip in Montana to explore Glacier National Park, Reynolds Creek was not in our original itinerary, nor the destination of our plan B. This backup hiking plan was to go to Florence Falls, which is a thirty plus metre tall waterfall with nice views. We only stopped by this simple creek on the way in. Yet, Reynolds Creek yields as one of my flagship photos in my portfolio.",
-        "On the return trip, the sun was past its afternoon arc and starting to set. The sun shone at a low angle, reflecting off the water above the capstone and shining through and off the trees. This lighting exposed many shades of green and reddish-brown, gleaming off and through the vegetation and rock. The angle of the sun deposited deep, contrasting shadows throughout the background. If there is anything I learned from this trip, it is that there is no luck: Sometimes, showing up with no expectations and seeing for yourself what you can find is its own reward."
-    ]},
-{   "title": "After the Storm", "location": "Upper Kananaskis Lake, Alberta", "image": "",
-    "description": [
-        "Our intentions the first day was to camp at Aster Lake, followed by a summit hike up Mount Sarrail. Our trip stayed uninterrupted by the mild rain at the start, yet this turned into a snowstorm once we started climbing steep elevation. By that time we were passing by the base of Mount Sarrail, navigating through rocky terrain that was covered in a generous amount of snow and temperatures below zero degrees. This treacherous trek to Aster Lake was finished off by a foggy evening in which we would be caught with no visibility by sunset.",
-        "Making wiser decisions, we headed back below the treeline. We were not in a good position in the backcountry, and it was too late and too dark to get back to the vehicle. After a moderately rough evening, we managed to sort out our plan of getting out in the morning. Waking up in the morning, expecting to fight mother nature’s wraith, this view of Mount Sarrail awaited me, loomed over me in all its natural cruelty and beauty of mother nature."
-    ]},
-{"title": "April's Canyon Creek", "location": "", "image": "",
-    "description": []
-}
+[
+    {
+        "album": {
+            "name": "",
+            "date": "",
+            "photos": [
+                {
+                    "title": "Sunkissed Creek",
+                    "location": "Glacier National Park, Montana",
+                    "image": "./photography/deadwoodFallsCoffee.jpg",
+                    "description": [
+                        "During a hiking trip in Montana to explore Glacier National Park, Reynolds Creek was not in our original itinerary, nor the destination of our plan B. This backup hiking plan was to go to Florence Falls, which is a thirty plus metre tall waterfall with nice views. We only stopped by this simple creek on the way in. Yet, Reynolds Creek yields as one of my flagship photos in my portfolio.",
+                        "On the return trip, the sun was past its afternoon arc and starting to set. The sun shone at a low angle, reflecting off the water above the capstone and shining through and off the trees. This lighting exposed many shades of green and reddish-brown, gleaming off and through the vegetation and rock. The angle of the sun deposited deep, contrasting shadows throughout the background. If there is anything I learned from this trip, it is that there is no luck: Sometimes, showing up with no expectations and seeing for yourself what you can find is its own reward."
+                    ]
+                },
+                {
+                    "title": "After the Storm",
+                    "location": "Upper Kananaskis Lake, Alberta",
+                    "image": "",
+                    "description": [
+                        "Our intentions the first day was to camp at Aster Lake, followed by a summit hike up Mount Sarrail. Our trip stayed uninterrupted by the mild rain at the start, yet this turned into a snowstorm once we started climbing steep elevation. By that time we were passing by the base of Mount Sarrail, navigating through rocky terrain that was covered in a generous amount of snow and temperatures below zero degrees. This treacherous trek to Aster Lake was finished off by a foggy evening in which we would be caught with no visibility by sunset.",
+                        "Making wiser decisions, we headed back below the treeline. We were not in a good position in the backcountry, and it was too late and too dark to get back to the vehicle. After a moderately rough evening, we managed to sort out our plan of getting out in the morning. Waking up in the morning, expecting to fight mother nature’s wraith, this view of Mount Sarrail awaited me, loomed over me in all its natural cruelty and beauty of mother nature."
+                    ]
+                },
+                {
+                    "title": "April's Canyon Creek",
+                    "location": "",
+                    "image": "",
+                    "description": []
+                }
+            ]
+        }
+    },
+    {
+        "album": {
+            "name": "",
+            "date": "",
+            "photos": [
+                {
+                    "title": "Sunkissed Creek",
+                    "location": "Glacier National Park, Montana",
+                    "image": "./photography/deadwoodFallsCoffee.jpg",
+                    "description": [
+                        "During a hiking trip in Montana to explore Glacier National Park, Reynolds Creek was not in our original itinerary, nor the destination of our plan B. This backup hiking plan was to go to Florence Falls, which is a thirty plus metre tall waterfall with nice views. We only stopped by this simple creek on the way in. Yet, Reynolds Creek yields as one of my flagship photos in my portfolio.",
+                        "On the return trip, the sun was past its afternoon arc and starting to set. The sun shone at a low angle, reflecting off the water above the capstone and shining through and off the trees. This lighting exposed many shades of green and reddish-brown, gleaming off and through the vegetation and rock. The angle of the sun deposited deep, contrasting shadows throughout the background. If there is anything I learned from this trip, it is that there is no luck: Sometimes, showing up with no expectations and seeing for yourself what you can find is its own reward."
+                    ]
+                },
+                {
+                    "title": "After the Storm",
+                    "location": "Upper Kananaskis Lake, Alberta",
+                    "image": "",
+                    "description": [
+                        "Our intentions the first day was to camp at Aster Lake, followed by a summit hike up Mount Sarrail. Our trip stayed uninterrupted by the mild rain at the start, yet this turned into a snowstorm once we started climbing steep elevation. By that time we were passing by the base of Mount Sarrail, navigating through rocky terrain that was covered in a generous amount of snow and temperatures below zero degrees. This treacherous trek to Aster Lake was finished off by a foggy evening in which we would be caught with no visibility by sunset.",
+                        "Making wiser decisions, we headed back below the treeline. We were not in a good position in the backcountry, and it was too late and too dark to get back to the vehicle. After a moderately rough evening, we managed to sort out our plan of getting out in the morning. Waking up in the morning, expecting to fight mother nature’s wraith, this view of Mount Sarrail awaited me, loomed over me in all its natural cruelty and beauty of mother nature."
+                    ]
+                },
+                {
+                    "title": "April's Canyon Creek",
+                    "location": "",
+                    "image": "",
+                    "description": []
+                }
+            ]
+        }
+    }
+
 ]

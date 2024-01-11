@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", async (event) =>{
 
     const pages = Array.from(document.querySelector("#headerButtons").children);
 
+
+    /* album{name, date, location, photos[title, location, image, description[...]] } */
     
     async function makeListeners(){
 //        document.querySelector("#headerButtons").addEventListener("click", (event) => changeView(event));//pageSwitch(event));
